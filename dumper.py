@@ -36,7 +36,7 @@ def dump(lang):
 
 def save_results(results, lang):
     with open("properties/{}.json".format(lang), 'w') as f:
-        json.dump(results, f)
+        json.dump(results, f, indent=2)
 
 if __name__ == "__main__":
     load_queries()
